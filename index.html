@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <section class="data ">
+        
+        <div class="layer">
+            <div id="infoModal" class="info-modal rounded-2 p-4">
+                <div class="head d-flex justify-content-between align-items-center mb-4">
+                    <div class="d-flex">
+                        <div class="red"></div>
+                        <div class="blue"></div>
+                        <div class="green"></div>
+                    </div>
+                    <div class="btn-close">
+                    </div>
+                </div>
+            <div class="body-info">
+                <p class="fs-4">Site Name or Url is not valid, Please follow the rules below :</p>
+                <p class="fs-5"><span class="me-2 fs-5 text-danger"><i class="fa-regular fa-circle-right"></i></span>Site name must contain at least 3 characters</p>
+                <p class="fs-5"><span class="me-2 fs-5 text-danger"><i class="fa-regular fa-circle-right"></i></span>Site URL must be a valid one</p>
+            </div>
+        </div>
+        </div>
+        <div class="container text-center pt-5 px-4">
+            <h1 class="mb-5 web-title">Bookmarker</h1>
+            <div class="Bookmarker-body py-4">
+                <h2 class="title mb-4">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name text-start mb-4 fw-semibold">
+                    <label for="bookmarkName" class="mb-2">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                        Site Name
+                    </label>
+                    <input type="text" placeholder="Bookmark Name" id="bookmarkName" class="form-control fw-semibold">
+                </div>
+                <div class="site-url text-start mb-5 fw-semibold">
+                    <label for="bookmarkURL" class="mb-2">
+                        <i class="fa-solid fa-link"></i>
+                        Site URL
+                    </label>
+                    <input type="url" placeholder="Website URL" id="bookmarkURL" class="form-control">
+                </div>
+                <button class="btn-submit">Submit</button>
+                <button class="btn-clear">Clear</button>
+            </div>
+            <input type="search" class="form-control w-25 m-auto my-4" id="inputSearch" placeholder="Search...">
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
