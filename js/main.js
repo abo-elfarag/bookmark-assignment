@@ -61,7 +61,7 @@ function validSiteName(){
 }
 // Function to validate the site URL
 function validSiteUrl(){
-    var regex = /^[a-zA-Z](.)[a-z]{2,}$/;
+    var regex = /^(https?|ftp):\/\/[^\s$.?#].[^\s]*$/;
     return regex.test(bookmarkURL.value);
 }
 // Function to display bookmark data in the table
