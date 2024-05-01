@@ -73,7 +73,7 @@ a{
 }
 /* ----------home section------------------ */
 #home{
-    background-image: url(/imgs/bg.jpg);
+    background-image: url(../imgs/bg.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
